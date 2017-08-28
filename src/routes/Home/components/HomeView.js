@@ -28,6 +28,7 @@ export class HomeView extends Component {
     this.props.editGrid(lists)
   render () {
     const { lists, notes, gridCols, gridRowHeight, ...props } = this.props
+    console.log('HomeView')
     return (
       <GridOverlay>
         <Grid layout={lists} onChange={this.handleGridChange} cols={gridCols} rowHeight={gridRowHeight}>

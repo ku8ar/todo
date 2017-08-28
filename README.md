@@ -34,8 +34,11 @@ I will try to add a store validation mechanism in the future. Meanwhile:
 localStorage.clear()
 ```
 
+## Stack
+react, redux, redux-thunk, redux-rersist, react-gridbox, blueprint
+
 ## TODO (I mean "to do") List
-- [ ] Clean project, remove redux hacks (Elm antiparadigms)
+- [ ] Clean code (replace XD to KISS and DRY), clean project (especially package.json), remove redux hacks (Elm antiparadigms)
 - [ ] Intro
 - [ ] DnD to files
 - [ ] Beautify CSS (similar to tr..lo)

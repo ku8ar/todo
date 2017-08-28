@@ -1,0 +1,13 @@
+.done {
+  color: #8A9BA8;
+  text-decoration: line-through;
+}
+
+.center {
+  top: 50% !important; // blueprint is sometimes shitty lib...
+  transform: translateY(-50%);
+}
+
+.button-left {
+  z-index: 1;
+}

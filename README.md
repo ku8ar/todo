@@ -1,9 +1,13 @@
 # TODO Example
 
 TODO example app using CSS Grid Layout. Based on my another project: [React GridBox](https://github.com/ku8ar/react-gridbox).
+
 Entire code is in the '/src' directory. Boilerplate has only slightly changed. I do not use react-create-app because our great savior Dan still has not added decorators.
+
 Project is based on a blueprint with which I had not previously dealt (last year I worked only on SLDS). I did not want to use Bootstrap because it is too mainstream.
+
 Tested only on **Chrome Canary**!
+
 [**[Demo](https://ku8ar.github.io/todo)**]
 
 ## Manual

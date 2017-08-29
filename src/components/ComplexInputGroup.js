@@ -5,7 +5,10 @@ import './ComplexInputGroup.scss'
 
 export default class ComplexInputGroup extends Component {
   static propTypes = {
-    children: PropTypes.any,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(React.PropTypes.node),
+      PropTypes.node
+    ]),
     search: PropTypes.string,
     text: PropTypes.string
   }

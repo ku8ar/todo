@@ -14,6 +14,7 @@ export const createRootReducer = asyncReducers => {
     ...asyncReducers
   })
   return (state, action) => {
+    // special func to reload entire store. Must be in root reducer.
     if (action.type === RELOAD_STORE) {
       state = action.payload
     }

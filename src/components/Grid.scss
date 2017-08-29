@@ -1,0 +1,19 @@
+.grid-overlay {
+  height: 100%;
+  width: 100%;
+}
+
+.show-borders {
+  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.list-item-style {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.resize-corner {
+  border-bottom: 1rem solid rgba(255, 255, 255, 0.5);
+  border-left: 1rem solid transparent;
+}

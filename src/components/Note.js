@@ -6,11 +6,11 @@ import './Note.scss'
 
 export default class Note extends Component {
   static propTypes = {
-    listKey: PropTypes.any,
+    listKey: PropTypes.string,
     text: PropTypes.string,
     isDone: PropTypes.bool,
     onChange: PropTypes.func,
-    noteKey: PropTypes.any,
+    noteKey: PropTypes.string,
     editNote: PropTypes.func,
     removeNote: PropTypes.func
   }

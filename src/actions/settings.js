@@ -1,4 +1,5 @@
 import { EDIT_SETTINGS, RELOAD_STORE } from '../actionTypes'
+import { saveFile } from 'utils/file'
 
 const editSettings = (key, value) => ({
   type: EDIT_SETTINGS,
@@ -18,15 +19,6 @@ const uploadBackground = (files) =>
       dispatch(editSettings('background', reader.result))
     reader.readAsDataURL(files[0])
   }
-
-const saveFile = (name, content, type = 'data:text/plain;charset=utf-8,') => {
-  const pom = document.createElement('a')
-  pom.setAttribute('href', type + encodeURIComponent(content))
-  pom.setAttribute('download', name)
-  const event = document.createEvent('MouseEvents')
-  event.initEvent('click', true, true)
-  pom.dispatchEvent(event)
-}
 
 const exportStore = () =>
   (dispatch, getState) =>

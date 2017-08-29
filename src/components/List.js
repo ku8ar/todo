@@ -4,9 +4,12 @@ import './List.scss'
 
 export default class List extends Component {
   static propTypes = {
-    children: PropTypes.array,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(React.PropTypes.node),
+      PropTypes.node
+    ]),
     text: PropTypes.string,
-    listKey: PropTypes.any,
+    listKey: PropTypes.string,
     removeList: PropTypes.func,
     editList: PropTypes.func,
     addNote: PropTypes.func
@@ -35,7 +38,8 @@ export default class List extends Component {
         )}
         <div style={{ marginBottom: '0.5rem' }}>
           <div className='pt-input-group pt-large' style={{ width: '100%', zIndex: 1 }}>
-            <button className='pt-button pt-minimal pt-icon-add pt-fill' onClick={this.handleAddNote} />
+            <button className='pt-button pt-minimal pt-icon-add pt-fill add-button'
+              onClick={this.handleAddNote} />
           </div>
         </div>
       </div>

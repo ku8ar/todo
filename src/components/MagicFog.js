@@ -6,11 +6,19 @@ export default class MagicFog extends Component {
   static propTypes = {
     search: PropTypes.string
   }
-  render () {
+  getText = () => {
     const { search } = this.props
-    const isMuggy = !!search
+    switch (true) {
+      case !!search: return `Search results for "${search}"...`
+      default: return ''
+    }
+  }
+  render () {
+    const text = this.getText()
     return (
-      <div className={cn('fog', { 'wake-up': isMuggy })} />
+      <div className={cn('fog', { 'wake-up': !!text })}>
+        <span className='help-text'>{text}</span>
+      </div>
     )
   }
 }

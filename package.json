@@ -1,13 +1,19 @@
 {
-  "name": "react-redux-starter-kit",
-  "version": "3.0.0-alpha.2",
-  "description": "Get started with React, Redux, and React-Router!",
+  "name": "TODO",
+  "version": "0.0.1",
+  "description": "Example",
   "main": "index.js",
   "engines": {
     "node": ">=4.5.0",
     "npm": "^3.0.0"
   },
   "homepage": "https://ku8ar.github.io/todo",
+  "author": "Kuba Juszczyk <juszczykjakub@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ku8ar/todo.git"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "compile": "better-npm-run compile",
@@ -15,12 +21,9 @@
     "lint:fix": "npm run lint -- --fix",
     "start": "better-npm-run start",
     "dev": "better-npm-run dev",
-    "test": "better-npm-run test",
-    "test:dev": "npm run test -- --watch",
     "deploy": "better-npm-run deploy",
     "deploy:dev": "better-npm-run deploy:dev",
-    "deploy:prod": "better-npm-run deploy:prod",
-    "codecov": "cat coverage/*/lcov.info | codecov"
+    "deploy:prod": "better-npm-run deploy:prod"
   },
   "betterScripts": {
     "compile": {
@@ -62,23 +65,29 @@
       "env": {
         "DEBUG": "app:*"
       }
-    },
-    "test": {
-      "command": "node ./node_modules/karma/bin/karma start config/karma.config",
-      "env": {
-        "NODE_ENV": "test",
-        "DEBUG": "app:*"
-      }
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
-  },
-  "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
-  "license": "MIT",
   "dependencies": {
     "@blueprintjs/core": "^1.26.0",
+    "normalize.css": "^5.0.0",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-gridbox": "^0.1.0",
+    "react-redux": "^5.0.1",
+    "react-router": "^3.0.0",
+    "redux": "^3.6.0",
+    "redux-persist": "^4.9.1",
+    "redux-thunk": "^2.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.14",
+    "yargs": "^6.3.0",
+    "postcss-loader": "^1.1.0",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-plugin-transform-runtime": "^6.15.0",
@@ -99,23 +108,6 @@
     "ip": "^1.1.2",
     "json-loader": "^0.5.4",
     "node-sass": "^4.0.0",
-    "normalize.css": "^5.0.0",
-    "postcss-loader": "^1.1.0",
-    "react": "^15.6.1",
-    "react-addons-css-transition-group": "^15.6.0",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.1",
-    "react-router": "^3.0.0",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.0.0",
-    "rimraf": "^2.5.4",
-    "sass-loader": "^4.0.0",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.6",
-    "webpack": "^1.12.14",
-    "yargs": "^6.3.0"
-  },
-  "devDependencies": {
     "babel-eslint": "^7.1.0",
     "babel-plugin-istanbul": "^3.0.0",
     "chai": "^3.4.1",

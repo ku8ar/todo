@@ -5,7 +5,10 @@ const DEF_BG_NAME = 'bg.jpg'
 
 export default class Layout extends Component {
   static propTypes = {
-    children: PropTypes.any,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(React.PropTypes.node),
+      PropTypes.node
+    ]),
     background: PropTypes.string
   }
   render () {

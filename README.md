@@ -38,11 +38,8 @@ localStorage.clear()
 react, redux, redux-thunk, redux-rersist, react-gridbox, blueprint
 
 ## TODO (I mean "to do") List
-- [ ] Clean code (replace XD to KISS and DRY), clean project (especially package.json), remove redux hacks (Elm antiparadigms)
-- [ ] Intro
 - [ ] DnD to files
 - [ ] Beautify CSS (similar to tr..lo)
-- [ ] Grid size options
 - [ ] Second view (show react-router support)
 - [ ] OAuth demo
 - [ ] react-gridbox issues

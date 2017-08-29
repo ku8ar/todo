@@ -2,3 +2,22 @@
 body, input, select, textarea {
   font-family: 'Open Sans', sans-serif !important;
 }
+
+// hide intro (from outside of react)
+#intro {
+  animation: slide-out-bck-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes slide-out-bck-center {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}

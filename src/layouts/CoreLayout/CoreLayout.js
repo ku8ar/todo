@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from 'containers/Header'
-import MagicFog from 'containers/MagicFog'
-import SettingsDialog from 'containers/SettingsDialog'
+import SearchFog from 'containers/SearchFog'
+import SettingsMenu from 'containers/SettingsMenu'
 import Layout from 'containers/Layout'
 import './CoreLayout.scss'
 import '../../styles/core.scss'
@@ -9,9 +9,9 @@ import '../../styles/core.scss'
 export const CoreLayout = ({ children }) => (
   <div className='root'>
     <Header />
-    <SettingsDialog />
+    <SettingsMenu />
     <Layout>
-      <MagicFog />
+      <SearchFog />
       {children}
     </Layout>
   </div>

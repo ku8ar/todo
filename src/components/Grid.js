@@ -20,7 +20,9 @@ export default class extends Component {
   handleAddList = (e) =>
     this.props.addList({
       x: ~~(e.clientX / window.innerWidth * this.props.gridCols),
-      y: ~~((e.clientY - ReactDOM.findDOMNode(this).getBoundingClientRect().top) / this.props.gridRowHeight)
+      y: ~~((e.clientY - ReactDOM.findDOMNode(this).getBoundingClientRect().top) / this.props.gridRowHeight),
+      w: ~~(this.props.gridCols / 4), // 1/4 grid
+      h: ~~(window.innerHeight / 3 / this.props.gridRowHeight) // 1/3 grid
     })
   handleGridChange = (lists) =>
     this.props.editGrid(lists)

@@ -10,4 +10,6 @@ export const EDIT_NOTE = 'EDIT_NOTE'
 export const EDIT_SETTINGS = 'EDIT_SETTINGS'
 export const RELOAD_STORE = 'RELOAD_STORE'
 
-export const EDIT_FACEBOOK = 'EDIT_FACEBOOK'
+export const EDIT_USER = 'EDIT_USER'
+
+export const LOCATION_CHANGE = 'LOCATION_CHANGE'

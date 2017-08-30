@@ -1,11 +1,13 @@
 import lists from './lists'
 import notes from './notes'
 import settings from './settings'
-import facebook from './facebook'
+import user from './user'
+import location from './location'
 
 export default {
   ...lists,
   ...notes,
   ...settings,
-  ...facebook
+  ...user,
+  ...location
 }

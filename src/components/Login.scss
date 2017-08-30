@@ -1,0 +1,41 @@
+.login {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 12;
+  width: 100vw;
+  height: 100vh;
+  overflow: none;
+  background-color: white;
+  display: grid;
+  text-align: center;
+  div {
+    margin: auto;
+    width: 20rem;
+    div {
+      display: flex;
+      justify-content: space-between;
+      div {
+        width: 9rem;
+        height: 9rem;
+        padding-top: 0;
+        text-align: center;
+        span {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+.fb-logo {
+}
+
+.fb-logo:after {
+	color: #43609C;
+	content: "facebook";
+	font-family: Facebook Letter Faces, Arial;
+  font-size: 1.5rem;
+	font-weight: bold;
+  margin: auto;
+}

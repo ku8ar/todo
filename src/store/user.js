@@ -1,13 +1,14 @@
-import { EDIT_FACEBOOK } from '../actionTypes'
+import { EDIT_USER } from '../actionTypes'
 
 const ACTION_HANDLERS = {
-  [EDIT_FACEBOOK]: (state, action) =>
+  [EDIT_USER]: (state, action) =>
     ({ ...state, ...action.payload })
 }
 
 const initialState = {
   name: '',
-  id: ''
+  id: '',
+  isLogged: false
 }
 
 export default function locationReducer (state = initialState, action) {

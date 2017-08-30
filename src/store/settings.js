@@ -11,7 +11,8 @@ const initialState = {
   search: '',
   isDialog: false,
   background: '',
-  isGrid: false
+  isGrid: false,
+  isLogged: false
 }
 
 export default function locationReducer (state = initialState, action) {

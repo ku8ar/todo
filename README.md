@@ -41,6 +41,11 @@ react, redux, redux-thunk, redux-persist, react-gridbox, blueprint, oauth-js
 ## TODO (I mean "to do") List
 - [ ] DnD to files
 - [ ] Beautify CSS (similar to tr..lo)
-- [ ] Second view (show react-router support)
+- [ ] react-router-redux
 - [ ] react-gridbox issues
 - [ ] change blueprint to something normal!!!
+- [ ] reorganize views and components
+- [ ] refactor SASS imports
+- [ ] server side rendering
+- [ ] multiple languages
+- [ ] notifications

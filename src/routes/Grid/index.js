@@ -1,4 +1,4 @@
-import Grid from 'containers/Grid'
+import Grid from './Grid'
 
 // Sync route definition
 export default {

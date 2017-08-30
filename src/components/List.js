@@ -14,6 +14,22 @@ export default class List extends Component {
     editList: PropTypes.func,
     addNote: PropTypes.func
   }
+  /**
+   * contextGroup and ref is used to handle imperative focus() on HTML element
+   */
+  static childContextTypes = {
+    handlePressEnter: PropTypes.func
+  }
+  getChildContext () {
+    return {
+      handlePressEnter: this.handlePressEnter
+    }
+  }
+  setAddButtonRef = (ref) => {
+    this.addButtonRef = ref
+  }
+  handlePressEnter = () =>
+    this.addButtonRef.focus()
   handleRemove = () =>
     this.props.removeList(this.props.listKey)
   handleTitleChange = (e) =>
@@ -34,12 +50,12 @@ export default class List extends Component {
         </ComplexInputGroup>
         <div className='pt-menu-header' />
         {children.map((child, key) =>
-          <span key={key} style={{ marginBottom: '0.5rem' }}>{child}</span>
+          <span key={key} className='margin-bottom'>{child}</span>
         )}
-        <div style={{ marginBottom: '0.5rem' }}>
-          <div className='pt-input-group pt-large' style={{ width: '100%', zIndex: 1 }}>
+        <div className='margin-bottom'>
+          <div className='pt-input-group pt-large fill-button'>
             <button className='pt-button pt-minimal pt-icon-add pt-fill add-button'
-              onClick={this.handleAddNote} />
+              onClick={this.handleAddNote} ref={this.setAddButtonRef} />
           </div>
         </div>
       </div>

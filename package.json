@@ -70,6 +70,7 @@
   "dependencies": {
     "@blueprintjs/core": "^1.26.0",
     "normalize.css": "^5.0.0",
+    "oauthio-web": "^0.6.1",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",

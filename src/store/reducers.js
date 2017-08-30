@@ -3,6 +3,7 @@ import locationReducer from './location'
 import lists from './lists'
 import notes from './notes'
 import settings from './settings'
+import facebook from './facebook'
 import { RELOAD_STORE } from 'actionTypes'
 
 export const createRootReducer = asyncReducers => {
@@ -11,6 +12,7 @@ export const createRootReducer = asyncReducers => {
     lists,
     notes,
     settings,
+    facebook,
     ...asyncReducers
   })
   return (state, action) => {

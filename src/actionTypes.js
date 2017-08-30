@@ -9,3 +9,5 @@ export const EDIT_NOTE = 'EDIT_NOTE'
 
 export const EDIT_SETTINGS = 'EDIT_SETTINGS'
 export const RELOAD_STORE = 'RELOAD_STORE'
+
+export const EDIT_FACEBOOK = 'EDIT_FACEBOOK'

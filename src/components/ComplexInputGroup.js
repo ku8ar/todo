@@ -15,8 +15,9 @@ export default class ComplexInputGroup extends Component {
   render () {
     const { children, search, text } = this.props
     const isTop = !!search && searcher(search, text)
+    const isBottom = !!search && !isTop
     return (
-      <div className={cn('pt-input-group pt-large group', { 'top': isTop })}>
+      <div className={cn('pt-input-group pt-large group', { 'top': isTop, 'bottom': isBottom })}>
         {children}
       </div>
     )

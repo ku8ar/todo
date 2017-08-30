@@ -5,14 +5,14 @@ body, input, select, textarea {
 
 // hide intro (from outside of react)
 #intro {
-  animation: slide-out-bck-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: slide-out-bck-center 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @keyframes slide-out-bck-center {
   0% {
     opacity: 1;
   }
-  50% {
+  75% {
     opacity: 1;
   }
   100% {

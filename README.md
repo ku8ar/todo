@@ -19,6 +19,7 @@ Tested only on **Chrome Canary**!
 * Search field.
 * Automatic saving to localStorage.
 * Import and export to file.
+* oAuth basic support (only name and avatar from FB)
 
 ## Known Issues
 ##### Overlapping of cards, no min / max dimensions, crazy cursor on drag, poor performance
@@ -34,12 +35,12 @@ I will try to add a store validation mechanism in the future. Meanwhile:
 localStorage.clear()
 ```
 
-## Stack
-react, redux, redux-thunk, redux-rersist, react-gridbox, blueprint
+## Tech Stack
+react, redux, redux-thunk, redux-persist, react-gridbox, blueprint, oauth-js
 
 ## TODO (I mean "to do") List
 - [ ] DnD to files
 - [ ] Beautify CSS (similar to tr..lo)
 - [ ] Second view (show react-router support)
-- [ ] OAuth demo
 - [ ] react-gridbox issues
+- [ ] change blueprint to something normal!!!

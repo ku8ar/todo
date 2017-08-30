@@ -14,8 +14,12 @@ export default class Note extends Component {
     editNote: PropTypes.func,
     removeNote: PropTypes.func
   }
-  state = {
-    focus: false
+  static contextTypes = {
+    handlePressEnter: PropTypes.func
+  }
+  shouldComponentUpdate (nProps) {
+    return nProps.text !== this.props.text ||
+      nProps.isDone !== this.props.isDone
   }
   handleTitleChange = (e) =>
     this.props.editNote(this.props.noteKey, 'text', e.target.value)
@@ -23,6 +27,8 @@ export default class Note extends Component {
     this.props.editNote(this.props.noteKey, 'isDone', !this.props.isDone)
   handleRemove = () =>
     this.props.removeNote(this.props.noteKey)
+  handleKeyPress = (e) =>
+    e.key === 'Enter' && this.context.handlePressEnter()
   render () {
     const { text, isDone } = this.props
     return (
@@ -30,7 +36,7 @@ export default class Note extends Component {
         <button className='pt-button pt-minimal pt-intent-warning pt-icon-delete button-left'
           onClick={this.handleRemove} />
         <input className={cn('pt-input', { 'done': isDone })} value={text}
-          onChange={this.handleTitleChange} autoFocus={!text} />
+          onChange={this.handleTitleChange} autoFocus={!text} onKeyPress={this.handleKeyPress} />
         <Switch className='pt-icon pt-minimal pt-control pt-large center' checked={isDone}
           onChange={this.handleisDoneChange} />
       </ComplexInputGroup>

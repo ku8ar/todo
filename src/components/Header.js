@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import LoginButton from 'containers/LoginButton'
 import './Header.scss'
 
 export default class Header extends Component {
@@ -24,6 +25,8 @@ export default class Header extends Component {
           </div>
         </div>
         <div className='pt-navbar-group pt-align-right'>
+          <LoginButton />
+          <span className='pt-navbar-divider' />
           <button className='pt-button pt-minimal pt-icon-cog' onClick={this.handleOpenSettings} />
         </div>
       </nav>

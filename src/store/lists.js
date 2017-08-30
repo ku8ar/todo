@@ -2,8 +2,8 @@ import { ADD_LIST, REMOVE_LIST, EDIT_LIST, EDIT_GRID } from '../actionTypes'
 import uuid from 'uuid/v4'
 
 const ACTION_HANDLERS = {
-  [ADD_LIST]: (state, action) => {
-    return [...state, {
+  [ADD_LIST]: (state, action) => ([
+    ...state, {
       key: uuid(),
       x: 1,
       y: 1,
@@ -11,8 +11,8 @@ const ACTION_HANDLERS = {
       h: 20,
       text: '',
       ...action.payload
-    }]
-  },
+    }
+  ]),
   [REMOVE_LIST]: (state, action) =>
     state.filter(list => list.key !== action.payload),
   [EDIT_LIST]: (state, action) =>

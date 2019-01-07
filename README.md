@@ -23,7 +23,7 @@ Tested only on **Chrome Canary**!
 
 ## Known Issues
 ##### Overlapping of cards, no min / max dimensions, crazy cursor on drag, poor performance
-These are deficiencies in the react-gridbox library that I created in only one day a two months ago. I will improve this library in the future.
+These are deficiencies in the react-gridbox library that I created in only one day two months ago. I will improve this library in the future.
 ##### Only Chrome support
 This is React framework error. Seriously. This problem occurs because react inline styles with the value 'repeat()' are unnecessarily parsed by the framework. I already have a solution, but I need to change some lines in the react-gridbox to fix this bug.
 
